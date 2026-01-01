@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://knowall.link/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://knowall.link/about</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://knowall.link/tiktoks</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://knowall.link/youtube</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://knowall.link/submit</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://knowall.link/donate</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://knowall.link/thank-you</loc>
+    <priority>0.50</priority>
+  </url>
+</urlset>

@@ -1,0 +1,57 @@
+/* =========================
+   TIKTOK EMBEDS – STABLE GRID
+   ========================= */
+
+/* Grid layout (TikTok fights flex; grid is more reliable) */
+.tiktok-embed-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+/* Hard-sized card to prevent tall TikTok embeds */
+.tiktok-embed-wrapper {
+  position: relative;
+  width: 300px;
+  height: 500px;              /* Desktop height cap */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #0d0d0d;
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.35);
+}
+
+/* Force TikTok blockquote to stay inside the card */
+.tiktok-embed-wrapper blockquote.tiktok-embed {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Force injected iframe to obey card size */
+.tiktok-embed-wrapper iframe {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .tiktok-embed-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tiktok-embed-wrapper {
+    width: 100%;
+    max-width: 340px;
+    height: 420px;            /* Mobile height cap */
+    margin: 0 auto;
+  }
+}
